@@ -24,7 +24,7 @@ env:
 jobs:
   terraform:
     name: "Apply terraform code changes"
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
@@ -54,9 +54,9 @@ jobs:
       - name: Terraform plan
         id: plan
         run: terraform plan -no-color -input=false -out planfile
-        continue-on-errors: true
+        continue-on-error: true
 
       - name: Terraform plan status
-        if: steps.plan.outcome == "failure"
+        if: steps.plan.outcome == 'failure'
         run: exit 1
 
