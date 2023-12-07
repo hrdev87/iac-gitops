@@ -29,4 +29,5 @@ jobs:
         working-directory: ./terraform
     
     steps:
-        - name: test
+        - name: checkout
+          uses: actions/checkout@v4
