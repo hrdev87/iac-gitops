@@ -29,5 +29,4 @@ jobs:
         working-directory: ./terraform
     
     steps:
-        - name: Setup Terraform
-          uses: actions/checkout@v4
+        - uses: actions/checkout@v4
