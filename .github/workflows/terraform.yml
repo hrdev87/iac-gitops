@@ -1,4 +1,4 @@
-name: "Project1"
+name: "Project1 IAC"
 on:
   push:
     branches:
@@ -31,7 +31,7 @@ jobs:
         working-directory: ./terraform
     
     steps:
-      - name: checkout source code
+      - name: Checkout source code
         uses: actions/checkout@v4
       
       - name: Setup Terraform with specified version on the runner
