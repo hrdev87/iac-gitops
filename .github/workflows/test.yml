@@ -30,4 +30,4 @@ jobs:
     
     steps:
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v1
+    #   uses: hashicorp/setup-terraform@v1
