@@ -30,10 +30,10 @@ jobs:
     
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+    #   uses: actions/checkout@v4
 
     - name: Terraform Setup
-      uses: hashicorp/setup-terraform@v2
+    #   uses: hashicorp/setup-terraform@v2
 
     - name: Terraform init
       run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
