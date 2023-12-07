@@ -29,4 +29,7 @@ jobs:
         working-directory: ./terraform
     
     steps:
-        - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Terraform Setup
+      uses: hashicorp/setup-terraform@v2
