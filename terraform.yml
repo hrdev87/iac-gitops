@@ -1,9 +1,9 @@
 name: "Project1 IAC"
 on:
   push:
-    #branches:
-      #- main
-      #- stage
+    branches:
+      - main
+      - stage
     paths:
       - terraform/**
   pull_request:
