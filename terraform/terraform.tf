@@ -27,12 +27,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "artinactions23"
+    bucket = "gitops-terraform-state"
     key    = "terraform.tfstate"
-    region = "us-east-1"
+    region = "us-west-1"
   }
 
-  required_version = "~> 1.6.1"
+  required_version = "~> 1.6.3"
 }
 ##
 ##
