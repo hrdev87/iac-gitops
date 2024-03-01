@@ -1,4 +1,4 @@
-name: "Project1 IAC"
+name: "IAC Configuration with Terraform"
 on:
   push:
     branches:
